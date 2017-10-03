@@ -66,7 +66,7 @@ var projects = {
 		    title: "My portfolio", 
             dates: "Aug 2017",
             description: "building a personal portfolio collecting projects I have developed.",
-            images: ["images\\profile-img.png"]
+            images: ["images\\fry.jpg"]
             },
             {
 
