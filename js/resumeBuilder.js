@@ -113,7 +113,6 @@ var education = {
 			}
 
 		}
-
 	}
 };
 
@@ -199,3 +198,5 @@ bio.display();
 education.display();
 work.display();
 projects.display();
+
+$('#mapDiv').append(googleMap);
