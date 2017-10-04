@@ -163,6 +163,11 @@ ul {
   display: none;
 }
 
+.propic {
+  padding: 10px;
+  width: 40%;
+}
+
 img {
   padding: 10px;
 }

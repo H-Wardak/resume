@@ -14,7 +14,7 @@ var bio = {
 	},
 	welcomeMessage: "Currently, I'm working as pre-sales engineer in Ethergulf enterprise for world class security products such as Symantec Solutions, Proofpoint, Darktrace, LogRhythm, etc.", 
 	skills: ["Java", "Front-end Development", "C#", "Ethical Hacking", "Kali Linux", "Digital Forensics"],
-	biopic: "images/197x148.gif",
+	biopic: "images/me.jpg",
 	display: function(){
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
 		var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -24,7 +24,6 @@ var bio = {
 		var formattedContactInfo = [];
 		formattedContactInfo.push(HTMLemail.replace("%data%", bio.contacts.email));
 		formattedContactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github));
-		formattedContactInfo.push(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 		formattedContactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location));
 
 
@@ -57,6 +56,14 @@ var education = {
 		majors: ["Information Assurance and Security"],
 		dates: "2013 - 2017",
 		url: "www.kfupm.edu.sa"
+	},
+	{
+		name: "King Abdulaziz University",
+		location: "Jeddah, KSA",
+		degree: "Bachelor",
+		majors: ["Computer Science, Information Technology"],
+		dates: "2007 - 2011",
+		url: "www.kau.edu.sa"
 	}
 	],
 	onlineCourses: [
@@ -65,6 +72,12 @@ var education = {
 		school: "Udacity",
 		dates: "Jul 2017 - Oct 2017",
 		url: "www.udacity.com"
+	},
+	{
+		title: "Learn SAP Course - Online Beginner Training",
+		school: "Udemy",
+		dates: "March 2017",
+		url: "www.udemy.com"
 	}
 	],
 	display: function(){
@@ -148,13 +161,17 @@ var work = {
 var projects = {
 	projects: [{
 		title: "My portfolio", 
-		dates: "Aug 2017",
+		dates: "August 2017",
 		description: "building a personal portfolio collecting projects I have developed.",
-		images: ["images/fry.jpg"]
+		images: ["images/bg.jpg"]
 	},
 	{
-
-	}],
+		title: "Animal Trading Card", 
+		dates: "July 2017",
+		description: "desinging simple animal card highlighting its name, habitat, basic Information with its picture.",
+		images: ["images/lion.jpg"]
+	}
+	],
 	display: function(){
 		if(projects.projects.length > 0) {
 			for(i in projects.projects) {
