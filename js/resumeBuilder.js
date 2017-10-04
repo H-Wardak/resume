@@ -7,7 +7,7 @@ var bio = {
 	role : "Security Engineer",
 	contacts : {
 		mobile: "0568877432",
-		email: "myEmail@hotmail.com",
+		email: "haroon@hotmail.com",
 		github: "H-Wardak",
 		//twitter: string (optional)
 		location: "Riyadh"
@@ -40,9 +40,9 @@ var bio = {
 			}
 		}
 
-		for(var i = 0; i<formattedContactInfo.length; i++) {
-			$("#topContacts").append(formattedContactInfo[i]);
-			$("#footerContacts").append(formattedContactInfo[i]);
+		for(var j = 0; j<formattedContactInfo.length; j++) {
+			$("#topContacts").append(formattedContactInfo[j]);
+			$("#footerContacts").append(formattedContactInfo[j]);
 		}
 	}
 };
@@ -99,12 +99,12 @@ var education = {
 
 			if(education.onlineCourses.length > 0) {
 				$("#education").append(HTMLonlineClasses);
-				for(var i=0; i<education.onlineCourses.length; i++) {				
+				for(var j=0; j<education.onlineCourses.length; j++) {				
 					$("#education").append(HTMLschoolStart);
-					var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
-					var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
-					var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-					var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
+					var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[j].title).replace("#", education.onlineCourses[j].url);
+					var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[j].school);
+					var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[j].dates);
+					var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[j].url).replace("#", education.onlineCourses[j].url);
 
 					$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
 					$(".education-entry:last").append(formattedOnlineDates);
