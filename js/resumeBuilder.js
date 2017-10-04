@@ -70,7 +70,7 @@ var education = {
 	{
 		title: "Front-end Development",
 		school: "Udacity",
-		dates: "Jul 2017 - Oct 2017",
+		dates: "July 2017 - October 2017",
 		url: "www.udacity.com"
 	},
 	{
@@ -123,14 +123,14 @@ var work = {
 		employer: "Ethergulf enterprise", 
 		title: "pre-sales", 
 		location: "Riyadh", 
-		dates: "Feb 2017 - in progress",
+		dates: "February 2017 - in progress",
 		description: "in charge of maser security products, present it to customer, deploy and support." 
 	},
 	{
 		employer: "KFUPM", 
 		title: "Research Assistance", 
 		location: "Dhahran", 
-		dates: "Sep 2013 - Feb 2015",
+		dates: "September 2013 - February 2015",
 		description: "Participate in department projects, researchs and teaching labs" 
 	}
 	],
