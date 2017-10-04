@@ -35,12 +35,12 @@ var bio = {
 		if(bio.skills.length > 0) {
 			$("#header").append(HTMLskillsStart);
 
-			for(i in bio.skills) {
+			for(var i = 0; i<bio.skills.length; i++) {
 				$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
 			}
 		}
 
-		for(i in formattedContactInfo) {
+		for(var i = 0; i<formattedContactInfo.length; i++) {
 			$("#topContacts").append(formattedContactInfo[i]);
 			$("#footerContacts").append(formattedContactInfo[i]);
 		}
@@ -82,7 +82,7 @@ var education = {
 	],
 	display: function(){
 		if(education.schools.length > 0 || education.onlineCourses.length > 0) {
-			for(i in education.schools) {
+			for(var i=0; i<education.schools.length; i++) {
 				$("#education").append(HTMLschoolStart);
 
 				var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
@@ -99,7 +99,7 @@ var education = {
 
 			if(education.onlineCourses.length > 0) {
 				$("#education").append(HTMLonlineClasses);
-				for(i in education.onlineCourses) {				
+				for(var i=0; i<education.onlineCourses.length; i++) {				
 					$("#education").append(HTMLschoolStart);
 					var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
 					var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
@@ -138,7 +138,7 @@ var work = {
 
 			$("#workExperience").append(HTMLworkStart);
 
-			for(i in work.jobs) {
+			for(var i=0; i<work.jobs.length; i++) {
 				var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
 				var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
 				var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
@@ -173,7 +173,7 @@ var projects = {
 	],
 	display: function(){
 		if(projects.projects.length > 0) {
-			for(i in projects.projects) {
+			for(var i=0; i<projects.projects.length; i++) {
 				$("#projects").append(HTMLprojectStart);
 
 				var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
@@ -184,8 +184,7 @@ var projects = {
 				$(".project-entry:last").append(formattedProjectDates);
 				$(".project-entry:last").append(formattedProjectDescription);
 
-				for(img in projects.projects[i].images) {
-					console.log("this is i= "+i);
+				for(var img=0; img<projects.projects[i].images.length; img++) {
 					var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[img]);
 					$(".project-entry:last").append(formattedProjectImage);
 				}
